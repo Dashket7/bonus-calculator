@@ -7,8 +7,13 @@ public class Main {
         BonusService service = new BonusService();
         long expected = 30;
         long actual = service.calculate(1000, true);
-        System.out.println(actual);
-expected = 500;
-actual = service.calculate(1_000_000, true);
+        //System.out.println(actual);
+        expected = 500;
+        actual = service.calculate(1_000_000, true);
+        expected = 10;
+        actual = service.calculate(1000, false);
+        expected = 500;
+        actual = service.calculate(1_000_000, false);
+
     }
 }
